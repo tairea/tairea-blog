@@ -2,7 +2,7 @@
   <Layout>
     <div class="container-fluid p-0">
       <About/>
-      <hr class="m-0">
+      <!-- <hr class="m-0">
       <Experience/>
       <hr class="m-0">
       <Education/>
@@ -11,7 +11,7 @@
       <hr class="m-0">
       <Interests/>
       <hr class="m-0">
-      <Awards/>
+      <Awards/> -->
     </div>
   </Layout>
 </template>
@@ -41,6 +41,13 @@ export default {
 </script>
 
 <style lang="scss">
+
+.container-fluid {
+  background-color: #1f1f1f;
+  background-image: url("../assets/images/webb.png");
+  background-attachment: fixed;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
