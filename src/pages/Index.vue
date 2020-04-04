@@ -34,8 +34,8 @@ export default {
     Awards
   },
   metaInfo: {
-    title: "Gridsome Starter Resume",
-    titleTemplate: "%s - Create your resume quick and easy!"
+    title: "Ian",
+    titleTemplate: "%s Tairea.io"
   }
 };
 </script>
