@@ -22,6 +22,9 @@
         <a href="https://github.com/tairea" target="_blank" rel="noopener noreferrer">
           <font-awesome :icon="['fab', 'github']"/>
         </a>
+        <a href="https://gitlab.com/iantairea" target="_blank" rel="noopener noreferrer">
+          <font-awesome :icon="['fab', 'gitlab']"/>
+        </a>
         <a href="https://www.facebook.com/ian.tairea" target="_blank" rel="noopener noreferrer">
           <font-awesome :icon="['fab', 'facebook']"/>
         </a>
