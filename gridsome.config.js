@@ -14,11 +14,43 @@ module.exports = {
       options: {
         cacheTime: 600000
       }
-    }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './src/blogPosts/**/*.md',
+        typeName: 'Post',
+        route: '/posts/:slug',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            route: '/tag/:id',
+            create: true
+          }
+        }
+      },
+    },
+    {
+      use: "gridsome-plugin-tailwindcss",
+      /**
+      * These are the default options. You don't need to set any options to get
+      * going. Seriously, you don't need to declare tailwind.config.js.
+
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        presetEnvConfig: {},
+        shouldImport: true,
+        shouldTimeTravel: true
+      }
+      */
+    },
   ],
+  // templates: {
+  //   BlogPost: '/blog/:title',
+  // },
   css: {
     loaderOptions: {
       scss: {}
     }
   }
-}
+} 

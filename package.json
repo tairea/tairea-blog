@@ -12,8 +12,6 @@
     "@fortawesome/vue-fontawesome": "0.1.8",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.1.1",
-    "@gridsome/source-filesystem": "^0.3.0",
-    "@gridsome/transformer-remark": "^0.5.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.18",
     "gridsome": "^0.7.11",
@@ -21,5 +19,10 @@
     "npm": "^6.9.0",
     "sass-loader": "^7.1.0",
     "vue-scrollto": "^2.15.0"
+  },
+  "devDependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.0",
+    "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }

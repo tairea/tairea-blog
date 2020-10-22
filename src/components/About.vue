@@ -10,7 +10,7 @@
         <a
           href="mailto:ian@tairea.io"
         >ian@tairea.io</a>
-      </div>
+      </div>  
       <p
         class="lead mb-5"
       >I'm passionate about learning how to apply technology to benefit indigenous peoples.</p>
