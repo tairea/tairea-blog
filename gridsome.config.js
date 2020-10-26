@@ -1,6 +1,6 @@
 module.exports = {
   siteName: 'Tairea.io',
-  siteDescription: 'A tech crew in Aotearoa',
+  siteDescription: 'A blog of 3 brothers and their technology work',
   icon: './src/assets/images/favicon.png',
   siteUrl: 'https://tairea.io',
   plugins: [{

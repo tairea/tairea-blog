@@ -1,71 +1,74 @@
 <template>
-    <HomeLayout>
-        <div id="home-container">
-
-            <div id="ian" class="col-third">
-                <g-link to="/Blog/">
-                    <img src="">
-                    <h1>Ian</h1>
-                </g-link>
-                </div>
-            <div id="ben" class="col-third">
-                <img src="">
-                <h1>Ben</h1>
-            </div>
-            <div id="sam" class="col-third">
-                <img src="">
-                <h1>Sam</h1>
-            </div>
-        </div>
-    </HomeLayout>
+  <HomeLayout>
+    <div id="home-container">
+      <div id="ian" class="col-third">
+        <g-link :to="{ path: '/blog?tairea=ian' }">
+          <img src="" />
+          <h1>Ian</h1>
+        </g-link>
+      </div>
+      <div id="ben" class="col-third">
+        <g-link :to="{ path: '/blog?tairea=ben' }">
+          <img src="" />
+          <h1>Ben</h1>
+        </g-link>
+      </div>
+      <div id="sam" class="col-third">
+        <g-link :to="{ path: '/blog?tairea=sam' }">
+          <img src="" />
+          <h1>Sam</h1>
+        </g-link>
+      </div>
+    </div>
+  </HomeLayout>
 </template>
 
 <script>
-    import HomeLayout from "../layouts/HomeTemplate";
+import HomeLayout from "../layouts/HomeTemplate";
 
-    export default {
-        components: {
-            HomeLayout
-        },
-        metaInfo: {
-            title: "Ian",
-            titleTemplate: "%s Tairea.io"
-        }
-    };
+export default {
+  components: {
+    HomeLayout,
+  },
+  metaInfo: {
+    title: "Ian",
+    titleTemplate: "%s Tairea.io",
+  },
+  methods: {},
+};
 </script>
 
 <style lang="scss">
-    #home-container {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-    }
+#home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
 
-    #ian {
-        background-image: url("../assets/images/dot-grid.png");
-        background-attachment: fixed;
-    }
+#ian {
+  background-image: url("../assets/images/dot-grid.png");
+  background-attachment: fixed;
+}
 
-    #ben {
-        /* background-image: url("../assets/images/y-so-serious-white.png"); */
-        background-image: url("../assets/images/topography.png");
-        background-attachment: fixed;
-    }
+#ben {
+  /* background-image: url("../assets/images/y-so-serious-white.png"); */
+  background-image: url("../assets/images/topography.png");
+  background-attachment: fixed;
+}
 
-    #sam {
-        background-image: url("../assets/images/webb.png");
-        background-attachment: fixed;
-    }
+#sam {
+  background-image: url("../assets/images/webb.png");
+  background-attachment: fixed;
+}
 
+.col-third {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .col-third {
-        width: 33.33%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* .container-fluid {
+/* .container-fluid {
         background-color: #1f1f1f;
         background-image: url("../assets/images/webb.png");
         background-attachment: fixed;
